@@ -1,0 +1,356 @@
+.top {
+  width: 1440px;
+  height: 900px;
+  background: #101120;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    height: 108px;
+    align-items: center;
+    background: #090511;
+    .logo-wrapper {
+      .logo {
+        font-size: 24px;
+        font-family: Space Grotesk-Bold, Space Grotesk;
+        font-weight: bold;
+        line-height: 28px;
+        background: linear-gradient(121deg, #b721ff 0%, #21d4fd 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .menu-wrapper {
+      display: flex;
+      height: 26px;
+      font-size: 18px;
+      font-family: Space Grotesk-Medium, Space Grotesk;
+      font-weight: 500;
+      color: #ffffff;
+      line-height: 26px;
+      .menu-item {
+        padding-left: 64px;
+      }
+    }
+  }
+  .banner {
+    height: 792px;
+    background: #00061b;
+    .banner-top {
+      margin-bottom: 24px;
+      height: 160px;
+      font-size: 72px;
+      font-family: Space Grotesk-Bold, Space Grotesk;
+      font-weight: bold;
+      color: #ffffff;
+      line-height: 80px;
+    }
+    .banner-info {
+      width: 618px;
+      font-size: 18px;
+      font-family: Space Grotesk-Regular, Space Grotesk;
+      font-weight: 400;
+      color: #ffffff;
+      line-height: 26px;
+      margin-bottom: 140px;
+    }
+    .banner-btn {
+      display: flex;
+      .banner-btn__left {
+        width: 200px;
+        height: 56px;
+        text-align: center;
+        line-height: 56px;
+        background: linear-gradient(121deg, #b721ff 0%, #21d4fd 100%);
+      }
+      .banner-btn__right {
+        position: relative;
+        width: 56px;
+        height: 56px;
+        background: #ffffff;
+        border-radius: 0px 0px 0px 0px;
+        opacity: 1;
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-4px, -50%);
+          width: 0;
+          height: 0;
+          border-width: 8px 8px;
+          border-style: solid;
+          border-color: transparent transparent transparent #000000;
+        }
+      }
+    }
+  }
+}
+.bottom {
+  width: 100%;
+  height: 2000px;
+  background: red;
+}
+
+.main {
+  position: relative;
+  height: auto;
+  .item {
+    background: #101120;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    background: #101120;
+    .item-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .title {
+      font-size: 72px;
+      font-family: Space Grotesk-Bold, Space Grotesk;
+      font-weight: bold;
+      color: #ffffff;
+      line-height: 80px;
+    }
+
+    .info-container {
+      display: flex;
+      .info-container__img {
+        width: 480px;
+        height: 480px;
+        background: pink;
+      }
+      .info-container__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 32px;
+        font-family: Space Grotesk-Bold, Space Grotesk;
+        font-weight: bold;
+        color: #ffffff;
+        line-height: 40px;
+        .text-list {
+          margin-top: 24px;
+          .list-item {
+            padding-left: 24px;
+            font-size: 18px;
+            font-family: Space Grotesk-Regular, Space Grotesk;
+            color: #ffffff;
+            line-height: 26px;
+            position: relative;
+            &::after {
+              display: block;
+              content: "";
+              width: 8px;
+              height: 4px;
+              background: #b721ff;
+              border-radius: 0px 0px 0px 0px;
+              opacity: 1;
+              position: absolute;
+              left: 10px;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+      }
+    }
+  }
+  .item1 {
+  }
+  .item2 {
+  }
+  .item3 {
+  }
+}
+
+.guilds {
+  background: #10111f;
+
+  .wrapper {
+    height: 841px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .guilds-header {
+    height: 160px;
+    font-size: 72px;
+    font-family: Space Grotesk-Bold, Space Grotesk;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 80px;
+  }
+  .guilds-info {
+    width: 801px;
+    height: 78px;
+    font-size: 18px;
+    font-family: Space Grotesk-Regular, Space Grotesk;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 140px;
+  }
+  .guilds-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .box-item {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      width: 368px;
+      height: 203px;
+      background: linear-gradient(180deg, #1a1a2d 0%, rgba(26, 26, 45, 0) 100%);
+      .img {
+        position: absolute;
+        top: -50%;
+        transform: translate(0,50%);
+        width: 85px;
+        height: 97px;
+        background: rgba(255, 255, 255, 0.6000000238418579);
+        opacity: 1;
+      }
+      .num {
+        height: 44px;
+        font-size: 36px;
+        font-family: Space Grotesk-Bold, Space Grotesk;
+        font-weight: bold;
+        color: #ffffff;
+        line-height: 44px;
+      }
+      .text {
+        height: 26px;
+        font-size: 18px;
+        font-family: Space Grotesk-Medium, Space Grotesk;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+.main-scrolling-wrapper {
+  display: block;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.main-horiztonal-scrolling-container {
+  position: relative;
+  height: 5000px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.sticky-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  will-change: transform;
+  transform: translate3d(0px, 0px, 0px);
+  transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+    skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+.sticky-container.horizontal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.sticky-container.horizontal {
+  overflow: hidden;
+}
+.flex-horizontal {
+  display: flex;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+}
+.wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+/*在小于991像素之间的屏幕里,这里的样式才生效*/
+@media (max-width: 991px) {
+}
+/*在小于768像素的屏幕里,这里的样式才生效*/
+@media (max-width: 767px) {
+}
+
+.example {
+  color: white;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {
+    background: red;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {
+    background: green;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {
+    background: blue;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: #101120;
+  }
+}
