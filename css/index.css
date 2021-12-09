@@ -10,6 +10,12 @@ body {
   height: 900px;
 }
 .top .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: #101120;
   display: flex;
   justify-content: space-between;
   height: 108px;
