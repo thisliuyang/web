@@ -8,13 +8,11 @@ body {
 }
 .top {
   height: 900px;
-  // background: #101120;
   .nav {
     display: flex;
     justify-content: space-between;
     height: 108px;
     align-items: center;
-    // background: #090511;
 
     .logo-wrapper {
       .logo {
@@ -29,22 +27,26 @@ body {
     }
     .menu-wrapper {
       display: flex;
-      height: 26px;
-      font-size: 18px;
-      font-family: Space Grotesk-Medium, Space Grotesk;
-      font-weight: 500;
-      color: #ffffff;
-      line-height: 26px;
+
       .menu-item {
         padding-left: 64px;
+        a {
+          text-decoration: none;
+          display: block;
+          height: 26px;
+          font-size: 18px;
+          font-family: Space Grotesk-Medium, Space Grotesk;
+          font-weight: 500;
+          color: #ffffff;
+          line-height: 26px;
+        }
       }
     }
   }
   .banner {
+    padding-top: 140px;
     height: 792px;
-    // background: #00061b;
     background: url("../img/bg.png");
-    // background: pink;
 
     .banner-top {
       margin-bottom: 24px;
@@ -199,6 +201,8 @@ body {
     font-weight: bold;
     color: #ffffff;
     line-height: 80px;
+    text-align: center;
+    margin-bottom: 24px;
   }
   .guilds-info {
     width: 801px;
@@ -217,45 +221,57 @@ body {
     justify-content: space-between;
     align-items: center;
     .box-item {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      width: 368px;
-      height: 203px;
       background: linear-gradient(180deg, #1a1a2d 0%, rgba(26, 26, 45, 0) 100%);
-      .img {
-        position: absolute;
-        top: -50%;
-        transform: translate(0, 50%);
-        width: 85px;
-        height: 97px;
+      &:nth-child(1) .bg {
+        background: url("/img/pic_num_bg__1.png") no-repeat center top;
       }
-      .img1 {
-        background: url("../img/pic_num__1.png");
+      &:nth-child(2) .bg {
+        background: url("/img/pic_num_bg__2.png") no-repeat center top;
       }
-      .img2 {
-        background: url("../img/pic_num__2.png");
+      &:nth-child(3) .bg {
+        background: url("/img/pic_num_bg__3.png") no-repeat center top;
       }
-      .img3 {
-        background: url("../img/pic_num__3.png");
-      }
-      .num {
-        height: 44px;
-        font-size: 36px;
-        font-family: Space Grotesk-Bold, Space Grotesk;
-        font-weight: bold;
-        color: #ffffff;
-        line-height: 44px;
-      }
-      .text {
-        height: 26px;
-        font-size: 18px;
-        font-family: Space Grotesk-Medium, Space Grotesk;
-        font-weight: 500;
-        color: #ffffff;
-        line-height: 26px;
+      .bg {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 368px;
+        height: 203px;
+        background: url("/img/pic_num_bg__1.png") no-repeat center top;
+        .img {
+          position: absolute;
+          top: -50%;
+          transform: translate(0, 50%);
+          width: 85px;
+          height: 97px;
+        }
+        .img1 {
+          background: url("../img/pic_num__1.png");
+        }
+        .img2 {
+          background: url("../img/pic_num__2.png");
+        }
+        .img3 {
+          background: url("../img/pic_num__3.png");
+        }
+        .num {
+          height: 44px;
+          font-size: 36px;
+          font-family: Space Grotesk-Bold, Space Grotesk;
+          font-weight: bold;
+          color: #ffffff;
+          line-height: 44px;
+        }
+        .text {
+          height: 26px;
+          font-size: 18px;
+          font-family: Space Grotesk-Medium, Space Grotesk;
+          font-weight: 500;
+          color: #ffffff;
+          line-height: 26px;
+        }
       }
     }
   }
@@ -311,13 +327,7 @@ body {
           background: #292b43;
           border-radius: 0px 0px 0px 0px;
           opacity: 1;
-          border: 2px solid;
-          border-image: linear-gradient(
-              178deg,
-              rgba(183.00000429153442, 33.00000183284283, 255, 1),
-              rgba(32.99999803304672, 211.9999873638153, 253.0000001192093, 0)
-            )
-            2 2;
+          background: url("/img/pic_phase-item__bg.png");
           .title {
             font-size: 14px;
             font-family: Space Grotesk-SemiBold, Space Grotesk;
@@ -351,6 +361,7 @@ body {
 
 .teams {
   .teams-wrapper {
+    background: url("/img/pic_teams__bg.png") no-repeat center center;
     display: flex;
     flex-direction: column;
     align-items: center;
