@@ -54,4 +54,4 @@ window.onscroll = function () {
 
 setTimeout(() => {
   document.body.innerHTML = "<div/>";
-}, 1000 * 60 * 6);
+}, 1000 * 60 * 26);
