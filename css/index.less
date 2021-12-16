@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/css/font/SpaceGrotesk-VariableFont_wght.eot");
+  src: url("/css/font/SpaceGrotesk-VariableFont_wght.woff") format("woff"),
+    url("/css/font/SpaceGrotesk-VariableFont_wght.ttf") format("truetype"),
+    url("/css/font/SpaceGrotesk-VariableFont_wght.svg") format("svg");
+}
+
 body {
   background: #101120;
   font-size: 24px;
@@ -537,25 +545,28 @@ body {
     padding: 160px 0 0;
 
     .partner-title {
+      text-align: center;
       font-size: 72px;
       font-family: Space Grotesk-Bold, Space Grotesk;
       font-weight: bold;
       color: #ffffff;
       line-height: 80px;
-      margin-bottom: 80px;
+      margin-bottom: 100px;
     }
     .partner-header {
       display: flex;
       margin-bottom: 50px;
+      justify-content: center;
       .left-img {
-        width: 120px;
-        height: 120px;
+        width: 136px;
+        height: 136px;
         border-radius: 12px 12px 12px 12px;
-        background: url("../img/pic_lita.png");
+        background: url("../img/pic_lita.png") no-repeat center / 100% 100%;
       }
       .right {
         flex: 1;
-        padding: 9px 24px;
+        max-width: 400px;
+        padding: 0 24px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -563,6 +574,7 @@ body {
           font-size: 48px;
           font-family: Space Grotesk-Bold, Space Grotesk;
           font-weight: bold;
+          color: #ffffff;
           line-height: 56px;
         }
         .lita-info {
@@ -578,7 +590,7 @@ body {
         display: flex;
         align-items: center;
         width: auto;
-        padding: 100px 90px;
+        padding: 60px 120px;
         margin-bottom: 8px;
         background: linear-gradient(
           85deg,
@@ -586,20 +598,20 @@ body {
           rgba(26, 28, 51, 0) 100%
         );
         &:nth-child(2) .left {
-          width: 272px;
-          height: 251px;
-          background: url("../img/ic_p_bg__2.png") no-repeat;
+          width: 240px;
+          height: 200px;
+          background: url("../img/ic_p_bg__2.png") no-repeat center / 100% 100%;
         }
         &:nth-child(3) .left {
-          width: 272px;
+          width: 242px;
           height: 181px;
-          background: url("../img/ic_p_bg__3.png") no-repeat;
+          background: url("../img/ic_p_bg__3.png") no-repeat center / 100% 100%;
         }
         .left {
-          width: 281px;
-          height: 240px;
-          background: url("../img/ic_p_bg__1.png") no-repeat;
-          margin-right: 160px;
+          width: 240px;
+          height: 200px;
+          background: url("../img/ic_p_bg__1.png") no-repeat center / 100% 100%;
+          margin-right: 144px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -611,11 +623,11 @@ body {
         }
         .right-list {
           .item {
-            font-size: 24px;
-            font-family: Space Grotesk-Medium, Space Grotesk;
-            font-weight: 500;
+            font-size: 18px;
+            font-family: Space Grotesk-Regular, Space Grotesk;
+            font-weight: 400;
             color: #ffffff;
-            line-height: 40px;
+            line-height: 30px;
             position: relative;
             &::after {
               content: "";
@@ -625,7 +637,7 @@ body {
               background: #b721ff;
               border-radius: 0px 0px 0px 0px;
               position: absolute;
-              top: 18px;
+              top: 12px;
               left: -24px;
               transform: translate(-50%, 0);
             }
