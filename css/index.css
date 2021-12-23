@@ -92,6 +92,8 @@ body {
 }
 .top .banner .banner-btn {
   display: flex;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 .top .banner .banner-btn .banner-btn__left {
   cursor: pointer;
