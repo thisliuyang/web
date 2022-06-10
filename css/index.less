@@ -21,21 +21,45 @@ body {
 .header-wrapper {
   height: 100px;
   border-radius: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
   background: #232325;
   border: 1px solid #4a4a4e;
   border-radius: 24px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0 30px 0 32px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   background: url(/img/logo_bg.png) no-repeat;
 
   .left {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     .menu {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
       display: flex;
       padding-left: 48px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       .menu-item {
         font-family: "Gilroy-Medium";
@@ -49,7 +73,15 @@ body {
     }
   }
   .right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     img {
       cursor: pointer;
@@ -59,6 +91,10 @@ body {
 }
 
 .banner-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   background: url(/img/ic-b-bg1.png) no-repeat 430px -30px;
 
@@ -98,6 +134,10 @@ body {
         margin-bottom: 24px;
       }
       .input-item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: flex;
         height: 60px;
         margin-bottom: 16px;
@@ -141,6 +181,10 @@ body {
   background: url(/img/ic-c-bg.png) no-repeat;
   border: 1px solid #4a4a4e;
   border-radius: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
 
@@ -155,9 +199,27 @@ body {
     .c-btn {
       width: 178px;
       height: 60px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -moz-box-orient: horizontal;
+      -moz-box-direction: normal;
+      -ms-flex-direction: row;
       flex-direction: row;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       gap: 10px;
       background: #14f195;
@@ -177,7 +239,15 @@ body {
 
 .join-wrapper {
   margin-top: 240px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-bottom: 346px;
   .j-left {
@@ -228,6 +298,10 @@ body {
       }
     }
     .btn-list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
       display: flex;
       .ic-btn-1 {
         margin-right: 16px;
@@ -241,8 +315,22 @@ body {
 
 .the-going {
   .the-going-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     .t-top {
       width: 400px;
@@ -274,8 +362,22 @@ body {
       width: 743px;
       height: 388px;
       .t-main-bg {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
       }
       .ic-the-1 {
@@ -291,6 +393,9 @@ body {
       .ic-the-3 {
         position: absolute;
         top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
         transform: translate(0, -50%);
         left: 775px;
       }
@@ -307,6 +412,9 @@ body {
       .ic-the-6 {
         position: absolute;
         top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
         transform: translate(0, -50%);
         left: -229px;
       }
@@ -321,7 +429,15 @@ body {
 
 .questions-warpper {
   margin-top: 403px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   .right {
     width: 620px;
@@ -336,8 +452,22 @@ body {
       font-weight: 500;
       font-size: 16px;
       color: #ffffff;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       margin-bottom: 16px;
       &.question-item-active {
@@ -366,9 +496,18 @@ body {
 }
 
 .contact-wrapper {
+  margin-top: 240px;
   background: #14f195;
   border-radius: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
   height: 292px;
@@ -396,12 +535,14 @@ body {
       }
     }
     .con-form {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
       display: flex;
-
       .con-form-input {
-        background: #000000;
-        opacity: 0.2;
-        border: 1px solid #343543;
+        background: rgba(0, 0, 0, 0.2);
+        border: none;
         border-radius: 20px;
         font-family: "Inter";
         font-style: normal;
@@ -414,17 +555,61 @@ body {
         height: 60px;
         margin-right: 8px;
       }
+      input::input-placeholder {
+        color: #000000;
+      }
+
+      /* WebKit browsers */
+      ::-webkit-input-placeholder {
+        color: #000000
+      }
+      /* Mozilla Firefox 4 to 18 */
+      :-moz-placeholder {
+        color: #000000;
+        opacity: 1;
+      }
+      /* Mozilla Firefox 19+ */
+      ::-moz-placeholder {
+        color: #000000;
+        opacity: 1;
+      }
+      /* Internet Explorer 10+ */
+      :-ms-input-placeholder {
+        color: #000000
+      }
     }
   }
   .con-right {
     padding: 40px;
     padding-right: 286px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     background: url(/img/ic-contact-5.png) no-repeat right;
     .b-item {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       img {
         margin-left: 24px;
@@ -434,11 +619,23 @@ body {
 }
 
 .bottom-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 80px;
   padding-bottom: 118px;
   .bottom-main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
 
     .bottom-list2 {
@@ -465,7 +662,15 @@ body {
 }
 
 .footer-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   font-family: "Inter";
   font-style: normal;
@@ -475,8 +680,12 @@ body {
   color: #ffffff;
   opacity: 0.45;
   padding: 30px 0;
-  border-top: 1px solid #423E50;
+  border-top: 1px solid #423e50;
   .f-right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     .text {
       margin-left: 32px;
