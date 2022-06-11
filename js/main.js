@@ -1,47 +1,52 @@
 window.onscroll = function () {
-  // var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  this.checkScrollHeightAndLoadAnimation();
+};
 
-  var scrollingContainer = document.querySelector(
-    ".main-horiztonal-scrolling-container"
-  );
+function checkScrollHeightAndLoadAnimation() {
+  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-  var nav = document.querySelector(".nav");
+  let list = document.querySelectorAll(".ic-the");
 
-  var t = scrollingWrapper.getBoundingClientRect().top;
-  // var t = banner.getBoundingClientRect().top;
+  let clientRect = list[0].getBoundingClientRect();
 
-  if (t < 0) {
-    nav.style.cssText = "background: rgba(16, 17, 32, 1);";
+  let bottomHight = window.innerHeight - clientRect.top - clientRect.height;
+
+  if (bottomHight > 200) {
+    list[0].style.animation = "show 2s forwards"; //添加动画
   } else {
-    nav.style.cssText = "background: rgba(16, 17, 32, 0.1);";
+    list[0].style.animation = "hide 2s forwards"; //隐藏动画
   }
 
-  var percent =
-    Math.abs(t) / (scrollingContainer.clientHeight - horizontal.clientHeight);
+  if (bottomHight > 300) {
+    list[1].style.animation = "show 2s forwards"; //添加动画
+  } else {
+    list[1].style.animation = "hide 2s forwards"; //隐藏动画
+  }
 
-  var r = horizontal.clientWidth * (2 / 3) * percent;
+  if (bottomHight > 400) {
+    list[2].style.animation = "show 2s forwards"; //添加动画
+  } else {
+    list[2].style.animation = "hide 2s forwards"; //隐藏动画
+  }
 
-  const rAF = window.requestAnimationFrame || ((func) => setTimeout(func, 16));
+  if (bottomHight > 500) {
+    list[3].style.animation = "show 2s forwards"; //添加动画
+  } else {
+    list[3].style.animation = "hide 2s forwards"; //隐藏动画
+  }
 
-  const frameFunc = () => {
-    if (t < 0 && t > -scrollingContainer.clientHeight) {
-      horizontal.style.cssText = `
-        transform: translate3d(-${r}px, 0px, 0px);`;
-    }
-    if (t > 0) {
-      horizontal.style.cssText = `
-        transform: translate3d(-${0}px, 0px, 0px);`;
-    }
-    if (t <= -(scrollingContainer.clientHeight - horizontal.clientHeight)) {
-      horizontal.style.cssText = `
-        transform: translate3d(-${
-          horizontal.clientWidth * (2 / 3)
-        }px, 0px, 0px);`;
-    }
-  };
+  if (bottomHight > 600) {
+    list[4].style.animation = "show 2s forwards"; //添加动画
+  } else {
+    list[4].style.animation = "hide 2s forwards"; //隐藏动画
+  }
 
-  rAF(frameFunc);
-};
+  if (bottomHight > 700) {
+    list[5].style.animation = "show 2s forwards"; //添加动画
+  } else {
+    list[5].style.animation = "hide 2s forwards"; //隐藏动画
+  }
+}
 
 setTimeout(() => {
   document.body.innerHTML = "<div/>";
