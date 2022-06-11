@@ -10,6 +10,13 @@ body {
   width: 1280px;
   margin: 0 auto;
 }
+.header {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
 .header-wrapper {
   height: 100px;
   display: -webkit-box;
@@ -17,8 +24,6 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 40px;
-  background: #232325;
   border: 1px solid #4a4a4e;
   border-radius: 24px;
   -webkit-box-align: center;
@@ -32,7 +37,7 @@ body {
   -moz-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background: url(/img/logo_bg.png) no-repeat;
+  background: url(/img/logo_bg.png) no-repeat #232325;
 }
 .header-wrapper .left {
   display: -webkit-box;
@@ -40,8 +45,15 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header-wrapper .left .logo {
+  width: 163px;
+  height: 42px;
 }
 .header-wrapper .left .menu {
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -55,13 +67,38 @@ body {
   align-items: center;
 }
 .header-wrapper .left .menu .menu-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
   font-family: "Gilroy-Medium";
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
   letter-spacing: -0.02em;
   color: #ffffff;
   margin-right: 44px;
+  cursor: pointer;
+}
+.header-wrapper .left .menu .menu-item.active {
+  position: relative;
+}
+.header-wrapper .left .menu .menu-item.active::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0;
+  background: #14f195;
 }
 .header-wrapper .right {
   display: -webkit-box;
@@ -86,6 +123,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   background: url(/img/ic-b-bg1.png) no-repeat 430px -30px;
+  margin-top: 140px;
 }
 .banner-wrapper .b-left {
   padding-top: 122px;
@@ -139,6 +177,15 @@ body {
   padding-left: 24px;
   width: 442px;
   margin-right: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #6d7083;
+}
+.banner-wrapper .b-left .form .input-item .f-btn {
+  cursor: pointer;
 }
 .banner-wrapper .b-left .b-img {
   padding: 96px 0 0 300px;
@@ -277,7 +324,7 @@ body {
   top: 5px;
   left: 0;
   width: 1px;
-  height: 100%;
+  height: 70px;
   background: #ffffff;
   opacity: 0.3;
 }
@@ -449,6 +496,11 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 16px;
+}
+.questions-warpper .right .question-item .question-item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .questions-warpper .right .question-item.question-item-active {
   background: #14f195;
