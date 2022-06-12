@@ -11,40 +11,40 @@ function checkScrollHeightAndLoadAnimation() {
 
   let bottomHight = window.innerHeight - clientRect.top - clientRect.height;
 
-  if (bottomHight > 200) {
-    list[0].style.animation = "show 2s forwards"; //添加动画
+  if (bottomHight > 220) {
+    list[0].style.animation = "show 1s forwards"; //添加动画
   } else {
-    list[0].style.animation = "hide 2s forwards"; //隐藏动画
+    list[0].style.animation = "hide 1s forwards"; //隐藏动画
   }
 
-  if (bottomHight > 300) {
-    list[1].style.animation = "show 2s forwards"; //添加动画
+  if (bottomHight > 340) {
+    list[1].style.animation = "show 1s forwards"; //添加动画
   } else {
-    list[1].style.animation = "hide 2s forwards"; //隐藏动画
+    list[1].style.animation = "hide 1s forwards"; //隐藏动画
   }
 
-  if (bottomHight > 400) {
-    list[2].style.animation = "show 2s forwards"; //添加动画
+  if (bottomHight > 460) {
+    list[2].style.animation = "show 1s forwards"; //添加动画
   } else {
-    list[2].style.animation = "hide 2s forwards"; //隐藏动画
+    list[2].style.animation = "hide 1s forwards"; //隐藏动画
   }
 
-  if (bottomHight > 500) {
-    list[3].style.animation = "show 2s forwards"; //添加动画
+  if (bottomHight > 580) {
+    list[3].style.animation = "show 1s forwards"; //添加动画
   } else {
-    list[3].style.animation = "hide 2s forwards"; //隐藏动画
+    list[3].style.animation = "hide 1s forwards"; //隐藏动画
   }
 
-  if (bottomHight > 600) {
-    list[4].style.animation = "show 2s forwards"; //添加动画
+  if (bottomHight > 690) {
+    list[4].style.animation = "show 1s forwards"; //添加动画
   } else {
-    list[4].style.animation = "hide 2s forwards"; //隐藏动画
+    list[4].style.animation = "hide 1s forwards"; //隐藏动画
   }
 
-  if (bottomHight > 700) {
-    list[5].style.animation = "show 2s forwards"; //添加动画
+  if (bottomHight > 810) {
+    list[5].style.animation = "show 1s forwards"; //添加动画
   } else {
-    list[5].style.animation = "hide 2s forwards"; //隐藏动画
+    list[5].style.animation = "hide 1s forwards"; //隐藏动画
   }
 }
 
