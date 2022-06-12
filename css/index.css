@@ -17,6 +17,34 @@ body {
   right: 0;
   z-index: 999;
 }
+.socials {
+  width: 40px;
+  height: 40px;
+  background: url(/img/socials.png) no-repeat;
+  cursor: pointer;
+}
+.socials:hover {
+  background: url(/img/socials-1.png) no-repeat;
+}
+.socials-2 {
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  background: url(/img/socials-2.png) no-repeat;
+  cursor: pointer;
+}
+.socials-2:hover {
+  background: url(/img/socials-3.png) no-repeat;
+}
+.ic-b-form-btn {
+  width: 72px;
+  height: 60px;
+  background: url(/img/Frame2.png) no-repeat;
+  cursor: pointer;
+}
+.ic-b-form-btn:hover {
+  background: url(/img/Frame3.png) no-repeat;
+}
 .header-wrapper {
   height: 100px;
   display: -webkit-box;
@@ -78,7 +106,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
-  font-family: "Gilroy-Medium";
+  font-family: "Inter";
   font-size: 16px;
   line-height: 19px;
   letter-spacing: -0.02em;
@@ -111,10 +139,6 @@ body {
   -moz-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-.header-wrapper .right img {
-  cursor: pointer;
-  margin-left: 20px;
 }
 .banner-wrapper {
   display: -webkit-box;
@@ -387,7 +411,6 @@ body {
   margin-top: 280px;
   position: relative;
   width: 743px;
-  height: 388px;
 }
 .the-going .the-going-wrapper .t-main .t-main-bg {
   display: -webkit-box;
@@ -424,18 +447,33 @@ body {
     opacity: 0;
   }
 }
-.the-going .the-going-wrapper .t-main .ic-the {
-  opacity: 0;
-}
 .the-going .the-going-wrapper .t-main .ic-the-1 {
   position: absolute;
-  top: -136px;
+  top: -197px;
   left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.the-going .the-going-wrapper .t-main .ic-the-1 .ic-the-img {
+  margin-bottom: 48px;
+}
+.the-going .the-going-wrapper .t-main .ic-the-1 .ic-qi {
+  width: 35px;
+  height: 55px;
 }
 .the-going .the-going-wrapper .t-main .ic-the-2 {
   position: absolute;
-  top: -136px;
+  top: -197px;
   left: 455px;
+  display: flex;
+  flex-direction: column;
+}
+.the-going .the-going-wrapper .t-main .ic-the-2 .ic-the-img {
+  margin-bottom: 20px;
+}
+.the-going .the-going-wrapper .t-main .ic-the-2 .ic-qi {
+  width: 35px;
+  height: 55px;
 }
 .the-going .the-going-wrapper .t-main .ic-the-3 {
   position: absolute;
@@ -444,17 +482,43 @@ body {
   -moz-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  left: 775px;
+  right: -194px;
+  display: flex;
+}
+.the-going .the-going-wrapper .t-main .ic-the-3 .ic-the-img {
+  margin-left: 30px;
+}
+.the-going .the-going-wrapper .t-main .ic-the-3 .ic-qi {
+  width: 35px;
+  height: 55px;
 }
 .the-going .the-going-wrapper .t-main .ic-the-4 {
   position: absolute;
-  top: 399px;
-  left: 610px;
+  bottom: -162px;
+  right: -64px;
+  display: flex;
+  flex-direction: column;
+}
+.the-going .the-going-wrapper .t-main .ic-the-4 .ic-the-img {
+  margin-top: 62px;
+}
+.the-going .the-going-wrapper .t-main .ic-the-4 .ic-qi {
+  width: 35px;
+  height: 55px;
 }
 .the-going .the-going-wrapper .t-main .ic-the-5 {
   position: absolute;
-  top: 399px;
-  left: 214px;
+  bottom: -136px;
+  left: 206px;
+  display: flex;
+  flex-direction: column;
+}
+.the-going .the-going-wrapper .t-main .ic-the-5 .ic-the-img {
+  margin-top: 62px;
+}
+.the-going .the-going-wrapper .t-main .ic-the-5 .ic-qi {
+  width: 35px;
+  height: 55px;
 }
 .the-going .the-going-wrapper .t-main .ic-the-6 {
   position: absolute;
@@ -463,12 +527,30 @@ body {
   -moz-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  left: -229px;
+  left: -214px;
+  display: flex;
+}
+.the-going .the-going-wrapper .t-main .ic-the-6 .ic-the-img {
+  margin-right: 60px;
+}
+.the-going .the-going-wrapper .t-main .ic-the-6 .ic-qi {
+  width: 35px;
+  height: 55px;
 }
 .the-going .the-going-wrapper .t-main .ic-the-7 {
   position: absolute;
   top: -76px;
   right: -136px;
+}
+.the-going .the-going-wrapper .t-main .ic-arrow1 {
+  position: absolute;
+  top: -50px;
+  left: 182px;
+}
+.the-going .the-going-wrapper .t-main .ic-arrow2 {
+  position: absolute;
+  bottom: -34px;
+  left: 378px;
 }
 .questions-warpper {
   margin-top: 403px;
@@ -702,6 +784,7 @@ body {
 }
 .bottom-wrapper .bottom-main .socials-img {
   margin-left: 125px;
+  display: flex;
 }
 .footer-wrapper {
   display: -webkit-box;

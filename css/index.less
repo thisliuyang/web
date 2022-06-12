@@ -1,27 +1,3 @@
-// @font-face {
-//   font-family: 'Inter';
-//   src: url('/css/font/Inter-Medium.eot');
-//   src: url('/css/font/Inter-Medium.eot?#iefix') format('embedded-opentype'),
-//       url('/css/font/Inter-Medium.woff2') format('woff2'),
-//       url('/css/font/Inter-Medium.woff') format('woff'),
-//       url('/css/font/Inter-Medium.ttf') format('truetype'),
-//       url('/css/font/Inter-Medium.svg#Inter-Medium') format('svg');
-//   font-weight: 500;
-//   font-style: normal;
-//   font-display: swap;
-// }
-// @font-face {
-//   font-family: 'Inter';
-//   src: url('/css/font/Inter-Regular.eot');
-//   src: url('/css/font/Inter-Regular.eot?#iefix') format('embedded-opentype'),
-//       url('/css/font/Inter-Regular.woff2') format('woff2'),
-//       url('/css/font/Inter-Regular.woff') format('woff'),
-//       url('/css/font/Inter-Regular.ttf') format('truetype'),
-//       url('/css/font/Inter-Regular.svg#Inter-Regular') format('svg');
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: swap;
-// }
 body {
   background: #000100;
   font-size: 24px;
@@ -40,6 +16,35 @@ body {
   left: 0;
   right: 0;
   z-index: 999;
+}
+
+.socials {
+  width: 40px;
+  height: 40px;
+  background: url(/img/socials.png) no-repeat;
+  cursor: pointer;
+  &:hover {
+    background: url(/img/socials-1.png) no-repeat;
+  }
+}
+.socials-2 {
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  background: url(/img/socials-2.png) no-repeat;
+  cursor: pointer;
+  &:hover {
+    background: url(/img/socials-3.png) no-repeat;
+  }
+}
+.ic-b-form-btn {
+  width: 72px;
+  height: 60px;
+  background: url(/img/Frame2.png) no-repeat;
+  cursor: pointer;
+  &:hover {
+    background: url(/img/Frame3.png) no-repeat;
+  }
 }
 .header-wrapper {
   height: 100px;
@@ -101,7 +106,7 @@ body {
         -ms-flex-align: center;
         align-items: center;
         height: 100%;
-        font-family: "Gilroy-Medium";
+        font-family: "Inter";
         font-size: 16px;
         line-height: 19px;
         letter-spacing: -0.02em;
@@ -136,10 +141,6 @@ body {
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    img {
-      cursor: pointer;
-      margin-left: 20px;
-    }
   }
 }
 
@@ -422,7 +423,7 @@ body {
       margin-top: 280px;
       position: relative;
       width: 743px;
-      height: 388px;
+
       .t-main-bg {
         display: -webkit-box;
         display: -webkit-flex;
@@ -463,17 +464,35 @@ body {
       }
 
       .ic-the {
-        opacity: 0;
+        // opacity: 0;
       }
       .ic-the-1 {
         position: absolute;
-        top: -136px;
+        top: -197px;
         left: 0;
+        display: flex;
+        flex-direction: column;
+        .ic-the-img {
+          margin-bottom: 48px;
+        }
+        .ic-qi {
+          width: 35px;
+          height: 55px;
+        }
       }
       .ic-the-2 {
         position: absolute;
-        top: -136px;
+        top: -197px;
         left: 455px;
+        display: flex;
+        flex-direction: column;
+        .ic-the-img {
+          margin-bottom: 20px;
+        }
+        .ic-qi {
+          width: 35px;
+          height: 55px;
+        }
       }
       .ic-the-3 {
         position: absolute;
@@ -482,17 +501,44 @@ body {
         -moz-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
         transform: translate(0, -50%);
-        left: 775px;
+        right: -194px;
+        display: flex;
+        .ic-the-img {
+          margin-left: 30px;
+        }
+        .ic-qi {
+          width: 35px;
+          height: 55px;
+        }
       }
       .ic-the-4 {
         position: absolute;
-        top: 399px;
-        left: 610px;
+        bottom: -162px;
+        right: -64px;
+        display: flex;
+        flex-direction: column;
+        .ic-the-img {
+          margin-top: 62px;
+        }
+        .ic-qi {
+          width: 35px;
+          height: 55px;
+        }
       }
+
       .ic-the-5 {
         position: absolute;
-        top: 399px;
-        left: 214px;
+        bottom: -136px;
+        left: 206px;
+        display: flex;
+        flex-direction: column;
+        .ic-the-img {
+          margin-top: 62px;
+        }
+        .ic-qi {
+          width: 35px;
+          height: 55px;
+        }
       }
       .ic-the-6 {
         position: absolute;
@@ -501,12 +547,31 @@ body {
         -moz-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
         transform: translate(0, -50%);
-        left: -229px;
+        left: -214px;
+        display: flex;
+
+        .ic-the-img {
+          margin-right: 60px;
+        }
+        .ic-qi {
+          width: 35px;
+          height: 55px;
+        }
       }
       .ic-the-7 {
         position: absolute;
         top: -76px;
         right: -136px;
+      }
+      .ic-arrow1 {
+        position: absolute;
+        top: -50px;
+        left: 182px;
+      }
+      .ic-arrow2 {
+        position: absolute;
+        bottom: -34px;
+        left: 378px;
       }
     }
   }
@@ -748,6 +813,7 @@ body {
     }
     .socials-img {
       margin-left: 125px;
+      display: flex;
     }
   }
 }
