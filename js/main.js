@@ -2,6 +2,10 @@ window.onscroll = function () {
   this.checkScrollHeightAndLoadAnimation();
 };
 
+let num = 300;
+var index = 0;
+let isShow = {};
+
 function checkScrollHeightAndLoadAnimation() {
   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -11,43 +15,70 @@ function checkScrollHeightAndLoadAnimation() {
 
   let bottomHight = window.innerHeight - clientRect.top - clientRect.height;
 
-  if (bottomHight > 220) {
-    list[0].style.animation = "show 1s forwards"; //添加动画
+  function addAnimation(index) {
+    if (isShow[index] !== true) {
+      setTimeout(() => {
+        list[index].style.animation = "show 2s forwards"; //添加动画
+      }, num * index);
+    }
+
+    isShow[index] = true;
+  }
+  function hideAnimation(index) {
+    if (isShow[index] !== false) {
+      list[index].style.animation = "hide 1s forwards"; //隐藏动画
+    }
+    // setTimeout(() => {
+    //   list[index].style.animation = "hide 1s forwards"; //隐藏动画
+    // }, num * (5 - index) + 100);
+
+    isShow[index] = false;
+  }
+  if (bottomHight > 200) {
+    index = 0;
+
+    addAnimation(index);
   } else {
-    list[0].style.animation = "hide 1s forwards"; //隐藏动画
+    hideAnimation(0);
   }
 
-  if (bottomHight > 340) {
-    list[1].style.animation = "show 1s forwards"; //添加动画
+  if (bottomHight > 300) {
+    index = 1;
+
+    addAnimation(index);
   } else {
-    list[1].style.animation = "hide 1s forwards"; //隐藏动画
+    hideAnimation(1);
   }
 
-  if (bottomHight > 460) {
-    list[2].style.animation = "show 1s forwards"; //添加动画
+  if (bottomHight > 400) {
+    index = 2;
+
+    addAnimation(index);
   } else {
-    list[2].style.animation = "hide 1s forwards"; //隐藏动画
+    hideAnimation(2);
+  }
+
+  if (bottomHight > 500) {
+    index = 3;
+
+    addAnimation(index);
+  } else {
+    hideAnimation(3);
   }
 
   if (bottomHight > 580) {
-    list[3].style.animation = "show 1s forwards"; //添加动画
+    index = 4;
+
+    addAnimation(index);
   } else {
-    list[3].style.animation = "hide 1s forwards"; //隐藏动画
+    hideAnimation(4);
   }
 
-  if (bottomHight > 690) {
-    list[4].style.animation = "show 1s forwards"; //添加动画
-  } else {
-    list[4].style.animation = "hide 1s forwards"; //隐藏动画
-  }
+  if (bottomHight > 650) {
+    index = 5;
 
-  if (bottomHight > 810) {
-    list[5].style.animation = "show 1s forwards"; //添加动画
+    addAnimation(index);
   } else {
-    list[5].style.animation = "hide 1s forwards"; //隐藏动画
+    hideAnimation(5);
   }
 }
-
-setTimeout(() => {
-  document.body.innerHTML = "<div/>";
-}, 1000 * 60 * 26);

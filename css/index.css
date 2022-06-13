@@ -447,6 +447,9 @@ body {
     opacity: 0;
   }
 }
+.the-going .the-going-wrapper .t-main .ic-the {
+  opacity: 0;
+}
 .the-going .the-going-wrapper .t-main .ic-the-1 {
   position: absolute;
   top: -197px;
@@ -597,6 +600,10 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 16px;
+  cursor: pointer;
+}
+.questions-warpper .right .question-item:hover {
+  background: #545663;
 }
 .questions-warpper .right .question-item .question-item-title {
   display: flex;
