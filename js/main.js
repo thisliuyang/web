@@ -82,3 +82,31 @@ function checkScrollHeightAndLoadAnimation() {
     hideAnimation(5);
   }
 }
+
+function addEvent(index) {
+  document.getElementById("fold_hg" + index).onclick = function (ev) {
+    let tag = ev.target,
+      fold_hg = document.getElementById(`fold_hg` + index),
+      vm = document.getElementById(`box` + index);
+    icon = document.getElementById(`question-item-icon` + index);
+
+    if (fold_hg == null || vm == null) return;
+
+    var vmHeight = vm.getBoundingClientRect().height;
+
+    if (fold_hg.offsetHeight == 72) {
+      fold_hg.style.height = vmHeight + tag.offsetHeight + "px";
+      fold_hg.classList.add("question-item-active");
+      icon.classList.add("question-icon-active");
+    } else {
+      fold_hg.style.height = 72 + "px";
+      fold_hg.classList.remove("question-item-active");
+      icon.classList.remove("question-icon-active");
+    }
+  };
+}
+
+addEvent(1);
+addEvent(2);
+addEvent(3);
+addEvent(4);
