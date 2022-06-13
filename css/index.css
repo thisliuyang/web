@@ -45,6 +45,9 @@ body {
 .ic-b-form-btn:hover {
   background: url(/img/Frame3.png) no-repeat;
 }
+.c-text-detail {
+  color: #14f195;
+}
 .header-wrapper {
   height: 100px;
   display: -webkit-box;
@@ -152,6 +155,16 @@ body {
 .banner-wrapper .b-left {
   padding-top: 122px;
 }
+.banner-wrapper .b-left .title {
+  font-family: "Acumin Pro ExtraCondensed";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 116px;
+  line-height: 139px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 .banner-wrapper .b-left .text {
   margin-top: 40px;
   padding-left: 24px;
@@ -248,9 +261,30 @@ body {
 }
 .coming-wrapper .c-left .top {
   margin-bottom: 24px;
+  font-family: "Acumin Pro ExtraCondensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+  letter-spacing: 0.8em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .coming-wrapper .c-left .c-text {
+  width: 837px;
   margin-bottom: 56px;
+  font-family: "Acumin Pro ExtraCondensed";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 96px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.coming-wrapper .c-left .c-text .c-text-detail {
+  color: #14f195;
 }
 .coming-wrapper .c-left .c-btn {
   width: 178px;
@@ -330,6 +364,16 @@ body {
 .join-wrapper .j-right {
   padding-top: 110px;
 }
+.join-wrapper .j-right .j-r-top {
+  font-family: "Acumin Pro ExtraCondensed";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 96px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 .join-wrapper .j-right .j-text {
   width: 605px;
   margin: 26px 0 80px;
@@ -386,6 +430,16 @@ body {
 }
 .the-going .the-going-wrapper .t-top {
   width: 400px;
+}
+.the-going .the-going-wrapper .t-top .t-top-img {
+  font-family: "Acumin Pro ExtraCondensed";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 96px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .the-going .the-going-wrapper .t-top .t-top-text {
   margin-top: 24px;
@@ -568,6 +622,17 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+.questions-warpper .left {
+  font-family: "Acumin Pro ExtraCondensed";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 60px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: #ffffff;
+}
 .questions-warpper .right {
   width: 620px;
 }
@@ -664,8 +729,15 @@ body {
 }
 .contact-wrapper .con-left .con-left-img {
   margin-bottom: 40px;
-  width: 399px;
   height: 84px;
+  font-family: "Acumin Pro ExtraCondensed";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 120px;
+  line-height: 144px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #000000;
 }
 .contact-wrapper .con-left .con-left-img img {
   width: 100%;
