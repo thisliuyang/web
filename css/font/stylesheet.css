@@ -1,39 +1,53 @@
 @font-face {
-    font-family: 'Inter';
-    src: url('Inter-Medium.eot');
-    src: url('Inter-Medium.eot?#iefix') format('embedded-opentype'),
-        url('Inter-Medium.woff2') format('woff2'),
-        url('Inter-Medium.woff') format('woff'),
-        url('Inter-Medium.ttf') format('truetype'),
-        url('Inter-Medium.svg#Inter-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Inter";
+  src: url("Inter-Medium.eot");
+  src: url("Inter-Medium.eot?#iefix") format("embedded-opentype"),
+    url("Inter-Medium.woff2") format("woff2"),
+    url("Inter-Medium.woff") format("woff"),
+    url("Inter-Medium.ttf") format("truetype"),
+    url("Inter-Medium.svg#Inter-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('Inter-Regular.eot');
-    src: url('Inter-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Inter-Regular.woff2') format('woff2'),
-        url('Inter-Regular.woff') format('woff'),
-        url('Inter-Regular.ttf') format('truetype'),
-        url('Inter-Regular.svg#Inter-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Inter";
+  src: url("Inter-Regular.eot");
+  src: url("Inter-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Inter-Regular.woff2") format("woff2"),
+    url("Inter-Regular.woff") format("woff"),
+    url("Inter-Regular.ttf") format("truetype"),
+    url("Inter-Regular.svg#Inter-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Acumin Pro ExtraCondensed';
-    src: url('AcuminProExtraCond-UltraBlack.eot');
-    src: url('AcuminProExtraCond-UltraBlack.eot?#iefix') format('embedded-opentype'),
-        url('AcuminProExtraCond-UltraBlack.woff2') format('woff2'),
-        url('AcuminProExtraCond-UltraBlack.woff') format('woff'),
-        url('AcuminProExtraCond-UltraBlack.ttf') format('truetype'),
-        url('AcuminProExtraCond-UltraBlack.svg#AcuminProExtraCond-UltraBlack') format('svg');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("AcuminProExtraCond-UltraBlack.eot");
+  src: url("AcuminProExtraCond-UltraBlack.eot?#iefix")
+      format("embedded-opentype"),
+    url("AcuminProExtraCond-UltraBlack.woff2") format("woff2"),
+    url("AcuminProExtraCond-UltraBlack.woff") format("woff"),
+    url("AcuminProExtraCond-UltraBlack.ttf") format("truetype"),
+    url("AcuminProExtraCond-UltraBlack.svg#AcuminProExtraCond-UltraBlack")
+      format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
-
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("AcuminProExtraCond-Regular.eot");
+  src: url("AcuminProExtraCond-Regular.eot?#iefix") format("embedded-opentype"),
+    url("AcuminProExtraCond-Regular.woff2") format("woff2"),
+    url("AcuminProExtraCond-Regular.woff") format("woff"),
+    url("AcuminProExtraCond-Regular.ttf") format("truetype"),
+    url("AcuminProExtraCond-Regular.svg#AcuminProExtraCond-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
