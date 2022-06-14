@@ -382,7 +382,7 @@ a {
 }
 
 .join-wrapper {
-  margin-top: 240px;
+  padding-top: 240px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -418,7 +418,19 @@ a {
     }
   }
   .j-right {
-    padding-top: 110px;
+    padding-top: 76px;
+    .j-title {
+      font-family: "Acumin Pro ExtraCondensed";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: left;
+      letter-spacing: 0.8em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
     .j-r-top {
       font-family: "Acumin Pro ExtraCondensed";
       font-style: normal;
@@ -748,7 +760,6 @@ a {
       font-size: 16px;
       color: #ffffff;
       margin-bottom: 16px;
-      cursor: pointer;
       transition: all 0.3s;
       overflow: hidden;
       height: 72px;
@@ -763,6 +774,7 @@ a {
         align-items: center;
         height: 72px;
         padding: 0 24px;
+        cursor: pointer;
       }
       .question-item-title-text {
         position: relative;
@@ -834,8 +846,10 @@ a {
     border-left: 1px solid #000000;
   }
   .con-left {
-    padding: 40px;
-
+    padding: 52px 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .con-left-img {
       margin-bottom: 40px;
       height: 84px;
@@ -878,14 +892,25 @@ a {
         color: #000000;
       }
       .con-form-btn {
+        width: 401px;
+        height: 52px;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 52px;
         cursor: pointer;
         display: block;
-        width: 72px;
-        height: 60px;
-        background: url(/img/ic-contact-btn.png) no-repeat;
-        &:hover {
-          background: url(/img/ic-contact-btn-hover.png) no-repeat;
-        }
+        gap: 10px;
+        background: #000000;
+        border-radius: 10px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #14f195;
+        // background: url(/img/ic-contact-btn.png) no-repeat;
+        // &:hover {
+        //   background: url(/img/ic-contact-btn-hover.png) no-repeat;
+        // }
       }
 
       /* WebKit browsers */
@@ -993,7 +1018,7 @@ a {
   -moz-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 80px;
+  padding-top: 180px;
   padding-bottom: 118px;
   .bottom-main {
     display: -webkit-box;
