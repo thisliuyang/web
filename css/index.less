@@ -48,6 +48,7 @@ a {
     background: url(/img/Frame3.png) no-repeat;
   }
 }
+
 .c-text-detail {
   color: #14f195;
 }
@@ -228,6 +229,8 @@ a {
     }
 
     .form {
+      position: relative;
+      z-index: 99;
       margin-top: 110px;
       .f-tetle {
         font-family: "Inter";
@@ -365,6 +368,11 @@ a {
       font-size: 16px;
       line-height: 19px;
       color: #000000;
+      cursor: pointer;
+      &:hover {
+        background: #10c57a;
+        color: #000000;
+      }
     }
   }
   .c-right {
@@ -453,6 +461,30 @@ a {
       }
       .btn {
         cursor: pointer;
+        width: 140px;
+        height: 60px;
+        background: #14f195;
+        border-radius: 20px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        order: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background: #10c57a;
+          color: #000000;
+        }
+        img {
+          margin-right: 18px;
+        }
+        .ic-text {
+          color: #000000;
+        }
       }
     }
   }
@@ -891,9 +923,44 @@ a {
       -moz-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      img {
-        margin-left: 24px;
+      cursor: pointer;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      &:hover {
+        .ic-text {
+          color: #19542e;
+        }
+        .ic-contact-1 {
+          background: url(/img/ic-contact-1-hover.png) no-repeat;
+        }
+        .ic-contact-2 {
+          background: url(/img/ic-contact-4-hover.png) no-repeat;
+        }
       }
+      .ic-text {
+        margin-left: 24px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+      }
+    }
+    // https://mobile.twitter.com/thorobrdtokens
+    .ic-contact-1 {
+      width: 80px;
+      height: 80px;
+      background: url(/img/ic-contact-1.png) no-repeat;
+    }
+    .ic-contact-2 {
+      width: 80px;
+      height: 80px;
+      background: url(/img/ic-contact-2.png) no-repeat;
     }
   }
 }

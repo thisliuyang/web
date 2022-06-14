@@ -227,6 +227,8 @@ a {
   opacity: 0.3;
 }
 .banner-wrapper .b-left .form {
+  position: relative;
+  z-index: 99;
   margin-top: 110px;
 }
 .banner-wrapper .b-left .form .f-tetle {
@@ -360,6 +362,11 @@ a {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+  cursor: pointer;
+}
+.coming-wrapper .c-left .c-btn:hover {
+  background: #10c57a;
+  color: #000000;
 }
 .coming-wrapper .c-right {
   overflow: hidden;
@@ -448,6 +455,30 @@ a {
 }
 .join-wrapper .j-right .btn-list .btn {
   cursor: pointer;
+  width: 140px;
+  height: 60px;
+  background: #14f195;
+  border-radius: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  order: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.join-wrapper .j-right .btn-list .btn:hover {
+  background: #10c57a;
+  color: #000000;
+}
+.join-wrapper .j-right .btn-list .btn img {
+  margin-right: 18px;
+}
+.join-wrapper .j-right .btn-list .btn .ic-text {
+  color: #000000;
 }
 .the-going {
   padding-top: 200px;
@@ -867,9 +898,41 @@ a {
   -moz-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
 }
-.contact-wrapper .con-right .b-item img {
+.contact-wrapper .con-right .b-item:hover .ic-text {
+  color: #19542e;
+}
+.contact-wrapper .con-right .b-item:hover .ic-contact-1 {
+  background: url(/img/ic-contact-1-hover.png) no-repeat;
+}
+.contact-wrapper .con-right .b-item:hover .ic-contact-2 {
+  background: url(/img/ic-contact-4-hover.png) no-repeat;
+}
+.contact-wrapper .con-right .b-item .ic-text {
   margin-left: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.contact-wrapper .con-right .ic-contact-1 {
+  width: 80px;
+  height: 80px;
+  background: url(/img/ic-contact-1.png) no-repeat;
+}
+.contact-wrapper .con-right .ic-contact-2 {
+  width: 80px;
+  height: 80px;
+  background: url(/img/ic-contact-2.png) no-repeat;
 }
 .bottom-wrapper {
   display: -webkit-box;
