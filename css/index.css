@@ -41,6 +41,7 @@ a {
   background: url(/img/socials-3.png) no-repeat;
 }
 .ic-b-form-btn {
+  display: block;
   width: 72px;
   height: 60px;
   background: url(/img/Frame2.png) no-repeat;
@@ -756,8 +757,14 @@ a {
 .questions-warpper .right .question-item .question-item-main {
   padding: 24px;
 }
+.questions-warpper .right .question-item a {
+  color: #ffffff;
+}
 .questions-warpper .right .question-item.question-item-active {
   background: #14f195;
+  color: #000000;
+}
+.questions-warpper .right .question-item.question-item-active a {
   color: #000000;
 }
 .questions-warpper .right .question-item.question-item-active .question-item-title .question-item-title-text {
@@ -850,6 +857,16 @@ a {
 }
 .contact-wrapper .con-left .con-form input::input-placeholder {
   color: #000000;
+}
+.contact-wrapper .con-left .con-form .con-form-btn {
+  cursor: pointer;
+  display: block;
+  width: 72px;
+  height: 60px;
+  background: url(/img/ic-contact-btn.png) no-repeat;
+}
+.contact-wrapper .con-left .con-form .con-form-btn:hover {
+  background: url(/img/ic-contact-btn-hover.png) no-repeat;
 }
 .contact-wrapper .con-left .con-form ::-webkit-input-placeholder {
   color: #000000;

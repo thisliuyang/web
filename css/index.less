@@ -40,6 +40,7 @@ a {
   }
 }
 .ic-b-form-btn {
+  display: block;
   width: 72px;
   height: 60px;
   background: url(/img/Frame2.png) no-repeat;
@@ -774,9 +775,15 @@ a {
       .question-item-main {
         padding: 24px;
       }
+      a {
+        color: #ffffff;
+      }
       &.question-item-active {
         background: #14f195;
         color: #000000;
+        a {
+          color: #000000;
+        }
         .question-item-title {
           .question-item-title-text {
             position: relative;
@@ -869,6 +876,16 @@ a {
       }
       input::input-placeholder {
         color: #000000;
+      }
+      .con-form-btn {
+        cursor: pointer;
+        display: block;
+        width: 72px;
+        height: 60px;
+        background: url(/img/ic-contact-btn.png) no-repeat;
+        &:hover {
+          background: url(/img/ic-contact-btn-hover.png) no-repeat;
+        }
       }
 
       /* WebKit browsers */
