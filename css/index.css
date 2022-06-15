@@ -88,7 +88,7 @@ a {
   width: 163px;
   height: 42px;
 }
-.header-wrapper .left .menu {
+.header-wrapper .menu {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -102,7 +102,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
 }
-.header-wrapper .left .menu .menu-item {
+.header-wrapper .menu .menu-item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -121,7 +121,7 @@ a {
   color: #ffffff;
   cursor: pointer;
 }
-.header-wrapper .left .menu .menu-item a {
+.header-wrapper .menu .menu-item a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -141,13 +141,13 @@ a {
   margin-right: 44px;
   cursor: pointer;
 }
-.header-wrapper .left .menu .menu-item a:hover {
+.header-wrapper .menu .menu-item a:hover {
   color: #14f195;
 }
-.header-wrapper .left .menu .menu-item a.active {
+.header-wrapper .menu .menu-item a.active {
   position: relative;
 }
-.header-wrapper .left .menu .menu-item a.active::after {
+.header-wrapper .menu .menu-item a.active::after {
   content: "";
   display: block;
   width: 72px;
@@ -158,10 +158,10 @@ a {
   bottom: 0;
   background: #14f195;
 }
-.header-wrapper .left .menu .menu-item.active {
+.header-wrapper .menu .menu-item.active {
   position: relative;
 }
-.header-wrapper .left .menu .menu-item.active::after {
+.header-wrapper .menu .menu-item.active::after {
   content: "";
   display: block;
   width: 72px;
@@ -514,6 +514,9 @@ a {
   -moz-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.the-going .the-going-wrapper .t-top-wrapper {
+  width: 100%;
 }
 .the-going .the-going-wrapper .t-top {
   width: 400px;

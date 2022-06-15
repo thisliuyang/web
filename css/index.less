@@ -88,20 +88,39 @@ a {
       width: 163px;
       height: 42px;
     }
-    .menu {
-      height: 100%;
+  }
+  .menu {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 48px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    .menu-item {
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-box;
       display: -ms-flexbox;
       display: flex;
-      padding-left: 48px;
       -webkit-box-align: center;
       -webkit-align-items: center;
       -moz-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      .menu-item {
+      height: 100%;
+      font-family: "Inter";
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      cursor: pointer;
+      a {
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-box;
@@ -118,43 +137,10 @@ a {
         line-height: 19px;
         letter-spacing: -0.02em;
         color: #ffffff;
+        margin-right: 44px;
         cursor: pointer;
-        a {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -moz-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-          -moz-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          height: 100%;
-          font-family: "Inter";
-          font-size: 16px;
-          line-height: 19px;
-          letter-spacing: -0.02em;
-          color: #ffffff;
-          margin-right: 44px;
-          cursor: pointer;
-          &:hover {
-            color: #14f195;
-          }
-          &.active {
-            position: relative;
-            &::after {
-              content: "";
-              display: block;
-              width: 72px;
-              height: 3px;
-              position: absolute;
-              left: 50%;
-              transform: translate(-50%, 0);
-              bottom: 0;
-              background: #14f195;
-            }
-          }
+        &:hover {
+          color: #14f195;
         }
         &.active {
           position: relative;
@@ -169,6 +155,20 @@ a {
             bottom: 0;
             background: #14f195;
           }
+        }
+      }
+      &.active {
+        position: relative;
+        &::after {
+          content: "";
+          display: block;
+          width: 72px;
+          height: 3px;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, 0);
+          bottom: 0;
+          background: #14f195;
         }
       }
     }
@@ -523,6 +523,9 @@ a {
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    .t-top-wrapper {
+      width: 100%;
+    }
     .t-top {
       width: 400px;
       .t-top-img {
