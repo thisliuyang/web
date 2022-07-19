@@ -22,6 +22,11 @@
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
 
     <link rel="icon" href="./img/favicon.ico" type="image/x-ico" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="header">
@@ -91,16 +96,23 @@
           <div class="form">
             <div class="f-tetle">Sign up to Thoroughbred Tokens Whitelist:</div>
             <div class="input-item">
-              <input
-                type="text"
-                class="f-input"
-                placeholder="Type your Email..."
-              />
-              <div class="f-btn">
-                <a
+              <form id="myForm">
+                <!-- <label>email</label> -->
+                <input
+                  type="text"
+                  name="email"
+                  class="f-input"
+                  placeholder="Type your Email..."
+                />
+                <br />
+              </form>
+
+              <div class="f-btn" onclick='SubForm()'>
+                <div class="ic-b-form-btn"></div>
+                <!-- <a
                   href="mailto:thoroughbredtokens@gmail.com"
                   class="ic-b-form-btn"
-                ></a>
+                ></a> -->
               </div>
             </div>
             <!-- <div class="input-item">
@@ -437,4 +449,19 @@
     </div>
     <script src="./js/main.js"></script>
   </body>
+  <script>
+    function SubForm() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/RpAQjkbJDeyo2qt4/",
+        type: "post",
+        data: $("#myForm").serializeArray(),
+        success: function () {
+          alert("thank you your email has now been entered");
+        },
+        error: function () {
+          alert("There was an error :(");
+        },
+      });
+    }
+  </script>
 </html>
