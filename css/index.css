@@ -32,7 +32,8 @@ a {
   z-index: 2000;
   display: none;
 }
-.dialog__content {
+.dialog__content,
+.dialog__content_err {
   display: none;
 }
 .dialog__wrapper {
@@ -65,7 +66,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
 }
 .dialog__wrapper .dialog .model-btn {

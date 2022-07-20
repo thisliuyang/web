@@ -466,8 +466,20 @@
     <div class="dialog__content">
       <div class="dialog__wrapper">
         <div class="dialog">
-          <div class="title">thank you your email has now been entered</div>
+          <div class="title">Thank you your email has now been entered!</div>
 
+          <div class="model-btn">Confirm</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dialog__content_err">
+      <div class="dialog__wrapper">
+        <div class="dialog">
+          <div class="title">
+            <div>1、Please enter the correct email!</div>
+            <div>2、Verification failed, please re-enter and verify!</div>
+          </div>
           <div class="model-btn">Confirm</div>
         </div>
       </div>
@@ -475,14 +487,30 @@
     <script src="./js/main.js"></script>
   </body>
   <script>
+    function isEmail(s) {
+      return /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]{2,3}){1,2})$/.test(
+        s
+      );
+    }
+
     $(document).ready(function () {
       $(".model-btn").click(function () {
         $(".model").hide();
         $(".dialog__content").hide();
+        $(".dialog__content_err").hide();
       });
     });
 
     function SubForm() {
+      var email = $(".f-input").val();
+      if (!this.isEmail(email)) {
+        console.log("email :>> ", email);
+        $(".model").show();
+        $(".dialog__content_err").show();
+
+        return;
+      }
+
       $(".ic-b-loading").show();
 
       $.ajax({
