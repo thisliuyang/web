@@ -1052,6 +1052,7 @@ a {
 }
 .footer-wrapper .f-right .text {
   margin-left: 32px;
+  color: #ffffff;
 }
 /* 在小于1200像素的屏幕里,这里的样式才生效 */
 /* 在小于991像素之间的屏幕里,这里的样式才生效 */
