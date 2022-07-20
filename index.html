@@ -23,7 +23,7 @@
 
     <link rel="icon" href="./img/favicon.ico" type="image/x-ico" />
     <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
+      src="./js/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"
     ></script>
@@ -93,7 +93,7 @@
             tracks. It’s time to build your dream stables, race your own
             thoroughbreds and earn a profit while doing it.
           </div>
-          <div class="form">
+          <div class="form" id="another-loading">
             <div class="f-tetle">Sign up to Thoroughbred Tokens Whitelist:</div>
             <div class="input-item">
               <form id="myForm">
@@ -447,9 +447,7 @@
             </a>
           </div>
           <div class="text">
-            <a href="/" class="text" target="_blank">
-              Terms of Sale
-            </a>
+            <a href="/" class="text" target="_blank"> Terms of Sale </a>
           </div>
           <div class="text">
             <a href="/PrivacyPolicy.pdf" class="text" target="_blank">
@@ -459,18 +457,45 @@
         </div>
       </div>
     </div>
+    <div class="model"></div>
+    <div class="dialog__content">
+      <div class="dialog__wrapper">
+        <div class="dialog">
+          <div class="title">thank you your email has now been entered</div>
+
+          <div class="model-btn">Confirm</div>
+        </div>
+      </div>
+    </div>
     <script src="./js/main.js"></script>
+    <script src="./js/jquery.loading.js"></script>
   </body>
   <script>
+    $(document).ready(function () {
+      $(".model-btn").click(function () {
+        $(".model").hide();
+        $(".dialog__content").hide();
+      });
+    });
+
     function SubForm() {
+      $("#another-loading").loading();
+
       $.ajax({
         url: "https://api.apispreadsheets.com/data/RpAQjkbJDeyo2qt4/",
         type: "post",
         data: $("#myForm").serializeArray(),
         success: function () {
-          alert("thank you your email has now been entered");
+          $("#another-loading").loading("stop");
+
+          // alert("thank you your email has now been entered");
+          $(".model").show();
+          $(".dialog__content").show();
+
+          $(".f-input").val("");
         },
         error: function () {
+          $("#another-loading").loading("stop");
           alert("There was an error :(");
         },
       });
