@@ -96,7 +96,8 @@
           <div class="form" id="another-loading">
             <div class="f-tetle">Sign up to Thoroughbred Tokens Whitelist:</div>
             <div class="input-item">
-              <form id="myForm">
+              <form id="myForm" onsubmit="javascript:return SubForm();">
+
                 <!-- <label>email</label> -->
                 <input
                   type="text"
@@ -500,14 +501,16 @@
       });
     });
 
-    function SubForm() {
+    function SubForm(e) {
+      // e.preventDefault()
+
       var email = $(".f-input").val();
       if (!this.isEmail(email)) {
         console.log("email :>> ", email);
         $(".model").show();
         $(".dialog__content_err").show();
 
-        return;
+        return false;
       }
 
       $(".ic-b-loading").show();
@@ -531,6 +534,8 @@
           alert("There was an error :(");
         },
       });
+
+      return false;
     }
   </script>
 </html>
