@@ -101,6 +101,14 @@ a {
 .socials-2:hover {
   background: url(/img/socials-3.png) no-repeat;
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .ic-b-form-btn {
   display: block;
   width: 72px;
@@ -110,6 +118,31 @@ a {
 }
 .ic-b-form-btn:hover {
   background: url(/img/Frame3.png) no-repeat;
+}
+.f-btn {
+  position: relative;
+}
+.ic-b-loading {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+.ic-b-loading-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 60px;
+  cursor: pointer;
+  background: #14F195;
+  border-radius: 20px;
+}
+.ic-b-loading-btn .loadding-img {
+  animation: spin 2s linear infinite;
 }
 .c-text-detail {
   color: #14f195;
@@ -324,7 +357,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #6d7083;
+  color: #fff;
 }
 .banner-wrapper .b-left .form .input-item .f-btn {
   cursor: pointer;
