@@ -31,7 +31,8 @@ a {
   z-index: 2000;
   display: none;
 }
-.dialog__content,.dialog__content_err {
+.dialog__content,
+.dialog__content_err {
   display: none;
 }
 
@@ -103,8 +104,12 @@ a {
   }
 }
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .ic-b-form-btn {
   display: block;
@@ -135,7 +140,7 @@ a {
   width: 72px;
   height: 60px;
   cursor: pointer;
-  background: #14F195;
+  background: #14f195;
   border-radius: 20px;
   .loadding-img {
     animation: spin 2s linear infinite;
@@ -1140,6 +1145,9 @@ a {
       }
       &:hover {
         opacity: 1;
+        a {
+          color: #14f195;
+        }
       }
     }
     .socials-img {
@@ -1166,18 +1174,28 @@ a {
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
-  opacity: 0.45;
   padding: 30px 0;
   border-top: 1px solid #423e50;
+  .f-left {
+    opacity: 0.45;
+  }
   .f-right {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    .text {
+    .text-a {
+      opacity: 0.45;
+      position: relative;
+      padding: 12px;
+      border-radius: 9px;
       margin-left: 32px;
       color: #ffffff;
+      &:hover {
+        opacity: 1;
+        color: #14f195;
+      }
     }
   }
 }
